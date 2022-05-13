@@ -27,7 +27,7 @@ list-style: none;
 
 .logo {
   position: fixed;
-  margin: 2% auto auto 2%;
+  margin: 1% auto auto 2%;
   opacity: 0.8;
 }
 
@@ -45,7 +45,8 @@ grid-row-gap: 16%;
   font-weight: 400;
 }
 
-.footer--phone {
+.header--phone {
+  text-decoration: none;
   cursor: pointer;
   color: black;
   font-weight: 400;
