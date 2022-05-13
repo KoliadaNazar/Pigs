@@ -5,12 +5,13 @@ padding: 0;
 border: none;
 background-repeat: no-repeat;
 list-style: none;
+
 }
 
 .wrapper--page {
   display: grid;
   grid-template-columns: 1fr ;
-  grid-auto-rows: 300px 400px 194px 1fr ;
+  grid-auto-rows: 300px 400px 194px 1000px ;
   grid-template-areas:
   "header"
   "section"
@@ -60,7 +61,7 @@ grid-row-gap: 16%;
 
 .motto {
   position: relative;
-  margin-top: 8%;
+  margin-top: 4%;
 }
 
 .motto--link {
@@ -82,7 +83,7 @@ grid-row-gap: 16%;
 }
 
 .txt {
-  margin: 8% auto auto 4% ;
+  margin: 8% auto auto 3% ;
   font-size: 14px;
   font-weight: 500;
 }
@@ -101,30 +102,35 @@ grid-row-gap: 16%;
 
 .footer {
   grid-area: footer ;
-  background-image: url(img/bkg--7.1.png)
+  background-image: url(img/bkg--8.png)
 }
 
-.footer--h2{
-   font-weight: 800;
-   letter-spacing: 4.33px;
-   font-size: 16px;
-   color:#c2453c;
-  margin-left: 14%;
-   margin-top: 24%;
+.input-0 {
+   font-weight: 999;
+   letter-spacing: 2.33px;
+   color:#161863;
+   font-size: 20px;
  }
 
 .footer--grid {
-   margin-top: 6%;
+   margin-top: 22%;
    margin-left: 10%;
    display: grid;
-   grid-column-gap: 5%;
-   grid-row-gap: 4%;
-   grid-template-columns: 120px 120px;
-   grid-template-rows: 20px 20px 50px;
+   grid-column-gap: 6%;
+   grid-row-gap: 12%;
+   grid-template-columns: 38% 24%;
+   grid-template-rows: 30% 20% 20% 40% 24%;
    grid-template-areas:
+   "input-0 input-0"
    "input-1 input-2"
    "input-3 input-4"
    "input-5 input-5"
+   "input-6 input-6";
+ }
+
+ .input-0 {
+
+   grid-area: input-0;
  }
 
  .input-1 {
@@ -139,40 +145,43 @@ grid-row-gap: 16%;
  .input-4 {
    grid-area: input-4;
  }
-.footer--textarea {
 
+.footer--textarea {
   grid-area: input-5;
-  grid-column: 1 / 3;
+  /* grid-column: 1 / 3; */
+ }
+
+ .input-6 {
+   grid-area: input-6;
+   grid-row:  1 / 3;
  }
 
  .footer--form, .footer--textarea {
 
-   background-color:#f7584d;
-  border: 0.2px solid #c90d00;
-  color: #c2453c;
+   background-color:#161863;
+  border: 0.2px solid #000247;
+  color: #6163ba;
   font-weight: 600;
   font-size: 12px;
  }
 
  .button--footer {
-   letter-spacing: 1.5px;
+
    font-weight:bold;
-   background-color: #f7584d;
+   background-color: #6163ba;
    color: #FFFFFF;
-   width: 140px;
-   height: 30px;
    font-size: 14px;
    font-weight: 600;
    cursor: pointer;
    border: none;
-   margin-top: 6%;
-   margin-left: 24%;
  }
 
 .footer-ul {
-  margin: 8% auto 4% 6%;
-  font-weight: 700;
-  font-size: 14px;
+  position: relative;
+  top: 18%;
+  margin: auto auto 4% 4%;
+  font-weight: 900;
+  font-size: 16px;
 }
 
 .footer--email--2 {
@@ -181,7 +190,7 @@ grid-row-gap: 16%;
   font-size: 14px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 640px) {
   .wrapper--page {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -192,4 +201,5 @@ grid-row-gap: 16%;
     ". article ."
     ". footer .";
   }
+
 }
