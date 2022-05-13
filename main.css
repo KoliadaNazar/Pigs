@@ -190,7 +190,7 @@ grid-row-gap: 16%;
   font-size: 14px;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1040px) {
   .wrapper--page {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
