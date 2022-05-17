@@ -5,16 +5,17 @@ padding: 0;
 border: none;
 background-repeat: no-repeat;
 list-style: none;
-
+text-decoration: none;
 }
 
 .wrapper--page {
   display: grid;
   grid-template-columns: 1fr ;
-  grid-auto-rows: 300px 400px 194px 460px ;
+  grid-auto-rows: 300px 400px 1fr 194px 460px ;
   grid-template-areas:
   "header"
   "section"
+  "wrapper--goods"
   "article"
   "footer";
 }
@@ -88,6 +89,74 @@ grid-row-gap: 16%;
   font-size: 14px;
   font-weight: 500;
 }
+
+.wrapper--goods {
+  grid-area: wrapper--goods;
+  background-color: #ebeff5;
+}
+
+.goods--h1 {
+  font-weight: 500;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.goods {
+    margin: 2% 4%;
+    display: grid;
+    grid-column-gap: 2%;
+    grid-row-gap: 4%;
+    grid-template-columns:48% 48% ;
+    grid-template-rows:44% 44%;
+    grid-template-areas:
+    "goods--1 goods--2"
+    "goods--3 goods--4"
+    "goods--5 goods--6";
+}
+
+.goods--1 {
+  grid-area:  goods--1 ;
+}
+
+.goods--2 {
+grid-area:  goods--2 ;
+}
+
+.goods--3 {
+grid-area:  goods--3 ;
+}
+
+.goods--4 {
+grid-area:  goods--4 ;
+}
+
+.goods--5 {
+grid-area:  goods--5;
+}
+
+.goods-6 {
+grid-area:  goods--6 ;
+}
+
+
+.goods--img--1 {
+  width: 90%;
+  height: 50%;
+}
+
+.goods--a {
+  float: left;
+  font-size: 20px;
+  color: #c2453c;
+
+}
+
+.goods--dscrp {
+font-size: 14px;
+font-weight: 400;
+}
+
 
 .article {
   grid-area: article;
@@ -194,10 +263,11 @@ grid-row-gap: 16%;
   .wrapper--page {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     ". header ."
     ". section ."
+    ". goods ."
     ". article ."
     ". footer .";
   } */
