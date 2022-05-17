@@ -147,14 +147,14 @@ grid-area:  goods--6 ;
 
 .goods--a {
   float: left;
-  font-size: 18px;
+  font-size: 16px;
   color: #c2453c;
 
 }
 
 .goods--dscrp {
-font-size: 14px;
-font-weight: 400;
+font-size: 12px;
+font-weight: 300;
 }
 
 
